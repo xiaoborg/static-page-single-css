@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <title>static base template</title>
+    <style type="text/css">
+      html,
+      body {
+        margin: 0;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        padding: 16px;
+      }
+      .nav-link-list {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        max-width: 800px;
+        width: 100%;
+      }
+      .nav-link-item {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+      }
+      .nav-link-item > div {
+        display: flex;
+      }
+      .nav-link-item > div a {
+        margin-right: 10px;
+        color: black;
+        font-size: 16px;
+        text-decoration: none;
+      }
+      .nav-link-item > div a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="nav-link-list">
+      <li class="nav-link-item">
+        <h3>Page Title</h3>
+        <div>
+          <a href="page-demo/index.html" target="_blank">pageDemo</a>
+          <a href="page-demo/index.html" target="_blank">pageDemo</a>
+        </div>
+      </li>
+      <li class="nav-link-item">
+        <h3>Page Title</h3>
+        <div>
+          <a href="page-demo/index.html" target="_blank">pageDemo</a>
+        </div>
+      </li>
+    </ul>
+  </body>
+</html>
