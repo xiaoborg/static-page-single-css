@@ -1,8 +1,8 @@
 {
-  "name": "resume",
+  "name": "static-page-template01",
   "version": "1.0.0",
   "author": "xiao borg",
-  "description": "Personal resume",
+  "description": "static-page-template01 single",
   "main": "gulpfile.js",
   "scripts": {
     "copy": "gulp copy",

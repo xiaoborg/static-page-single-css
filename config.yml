@@ -23,6 +23,33 @@ PATHS:
   assets:
     - 'src/assets/**/*'
     - '!src/assets/{img,js,scss}/**/*'
+
   # Paths to JavaScript entry points for webpack to bundle modules
-  entries:
-    - 'src/assets/js/app.js'
+  js:
+    entries: 'src/assets/js/app.js'
+    dist:
+      develop: 'dist/assets/js/develop'
+      production: 'dist/assets/js/production'
+  css:
+    entries: './src/assets/scss/app.scss'
+    dist:
+      develop: 'dist/assets/css/develop'
+      production: 'dist/assets/css/production'
+  html:
+    replace:
+      - 'dist/index.html'
+      - 'dist/**/*.html'
+      - 'dist/**/**/*.html'
+  img:
+    dev: 'src/assets/img/**/*'
+    pro: 'dist/assets/img'
+  watch:
+    css:
+      - 'src/assets/scss/*.scss'
+      - 'src/assets/scss/**/*.scss'
+    html:
+      - './src/pages/**/*.html'
+    js:
+      - './src/assets/js/*.js'
+    img:
+      - './src/assets/img/**/*'
